@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+<title>Index</title>
+<link rel = "stylesheet" href = "external1.css">
+
+
+
+
+<script src= "main.js"></script>
+
+
+</head>
+
+<body>
+<div id ="logo">
+<img src="logo3.jpg" alt="logo" width="40" height="30">
+  </div>
+
+<div id="menu">
+  <a href="#home">home</a>
+  <a href="#about">About</a>
+  <a id ="active" href="#order">Order</a>
+  
+
+</div>
+ 
+<div id="header">
+<h1> Burrito Order Form</h1>
+<img src="burrito3.jpg" alt= "A picture of burrito"/>      
+</div>
+  <form action="MAILTO:fidelisjecinta@gmail.com" onsubmit="return validateInput()" method="post" enctype="text/plain" id = "Form">
+ 
+ <div> 
+ <label for = "Username"> Username: </label>
+ <input type="text" name="Username" id ="Username" placeholder ="Username"/>
+ 
+ </div>
+ 
+ <div>
+ 
+ <label for ="Password"> Password: </label>
+ <input type ="Password" name ="Password" id ="Password" maxlength="11"  placeholder="Password"/>
+ </div>
+ 
+ <div>
+ <label for = "Email"> Email: </label>
+ <input type = "Email" name ="Email" id = "Email" placeholder = "@gmail.com" required />
+ </div>
+ 
+  
+<div>
+<label for = "Quantity">Quantity:</label>
+ <input type = "text" name ="Quantity" id = "Quantity" />
+ </div>
+
+  
+<div>
+
+ <label for = "sizes"> sizes:</label>
+ <select name = "size" id = "sizes"  onclick= "validateSize()"> 
+<option value = "0" label="size"> </option>
+<option value = "Large">Large 5 euro </option>
+<option value = "Extralarge">  Extra-Large7.50 euro  </option>
+<option value ="Supersize"> Supersize  10euro </option>
+</select>
+
+</div>
+
+ 
+<div id="container">
+ 
+ <label for = "Discountcode"> Dis.code: </label>
+ <input  id = "Discountcode" name ="Discountcode" type = "text" />
+ </div>
+  
+
+<button type ="submit" value = "submit"> Submit</button>
+
+  </form>
+  
+
+ <img src="Burrito2.jpg" alt = "A picture" width= "600" height="300" />
+  
+
+</body>
+
+</html>
